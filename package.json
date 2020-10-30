@@ -1,0 +1,26 @@
+{
+  "name": "money-bot",
+  "version": "0.0.1",
+  "description": "Telegram bot for accounting of cash flow",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraPapka/MoneyBot.git"
+  },
+  "keywords": [
+    "money",
+    "bot",
+    "telegram",
+    "cash",
+    "flow"
+  ],
+  "author": "Yurii Papka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraPapka/MoneyBot/issues"
+  },
+  "homepage": "https://github.com/YuraPapka/MoneyBot#readme"
+}
