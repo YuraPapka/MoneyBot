@@ -4,7 +4,8 @@
   "description": "Telegram bot for accounting of cash flow",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "start": "tsc && node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,24 @@
   "bugs": {
     "url": "https://github.com/YuraPapka/MoneyBot/issues"
   },
-  "homepage": "https://github.com/YuraPapka/MoneyBot#readme"
+  "homepage": "https://github.com/YuraPapka/MoneyBot#readme",
+  "dependencies": {
+    "@types/pg": "^7.14.5",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "pg": "^8.4.2",
+    "telegraf": "^3.38.0",
+    "telegram-bot-api": "^2.0.1",
+    "ts-telegraf-decorators": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.11.5",
+    "jest": "^23.6.0",
+    "nock": "^10.0.2",
+    "nodemon": "^1.18.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "tsconfig": "./tsconfig.json"
 }
